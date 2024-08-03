@@ -1,0 +1,109 @@
+/* Contact */
+.contact {
+    position: relative;
+    left: 45px;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.well {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    color: rgba(15, 16, 18, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    background-color: white;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.well h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+hgroup {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+textarea,
+input {
+    width: 100%;
+}
+
+form {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+form>div {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+label {
+    /* color: var(--gray-tint-40); */
+    position: absolute;
+    left: 0;
+    top: .25rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--gray-tint-40);
+    height: 2.25rem;
+    width: 100%;
+    outline: none;
+    transition: border-color .3s ease;
+}
+
+input:focus {
+    border-color: var(--gray-base);
+}
+
+input:focus+label,
+input:valid+label {
+    transform: translateY(-1.25rem);
+    font-size: .8125rem;
+    color: var(--gray-base);
+    -webkit-transform: translateY(-1.25rem);
+    -moz-transform: translateY(-1.25rem);
+    -ms-transform: translateY(-1.25rem);
+    -o-transform: translateY(-1.25rem);
+}
+
+
+.btn1 {
+    width: 40%;
+    background-color: var(--gray-base);
+    appearance: none;
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+    /* font-size: 1rem; */
+    cursor: pointer;
+    border-radius: 100px;
+    /* font-weight: bold; */
+    transition: background-color .3s, transform .2s;
+}
+
+.btn1:hover {
+    background-color: var(--gray-tint-10);
+}
+
+.btn1:active {
+    transform: translate3d(3px, 3px, 0);
+}

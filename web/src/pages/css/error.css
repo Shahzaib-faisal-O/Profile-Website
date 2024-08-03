@@ -1,0 +1,10 @@
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.error h1 {
+    font-size: 8rem;
+}

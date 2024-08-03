@@ -1,0 +1,62 @@
+:root {
+    --loader-text-color: #f6e9fe;
+    --loader-bg: #03190a;
+}
+
+.preLoader {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background-color: var(--loader-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .5s ease-in-out, visibility .6s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out, visibility .6s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out, visibility .6s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out, visibility .6s ease-in-out;
+    -o-transition: opacity .5s ease-in-out, visibility .6s ease-in-out;
+}
+
+svg {
+    width: 50rem;
+}
+
+svg text {
+    font-size: 5rem;
+    stroke-width: 2;
+    letter-spacing: -5px;
+    font-family: -apple-system, BlinkMacSystemFont;
+    fill: var(--loader-text-color);
+}
+
+svg text.text-body {
+    stroke: var(--loader-text-color);
+    animation: animate-stroke 6s infinite alternate;
+    -webkit-animation: animate-stroke 6s infinite alternate;
+}
+
+@keyframes animate-stroke {
+    0% {
+        fill: transparent;
+        stroke: var(--loader-text-color);
+        stroke-width: 3;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 32%;
+    }
+
+    50% {
+        fill: transparent;
+        stroke: var(--loader-text-color);
+        stroke-width: 3;
+    }
+
+    80%,
+    100% {
+        fill: var(--loader-text-color);
+        stroke: transparent;
+        stroke-width: 0;
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 32% 0;
+    }
+}

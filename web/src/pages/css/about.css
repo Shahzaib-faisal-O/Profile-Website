@@ -1,0 +1,74 @@
+/* About  */
+.about {
+    position: relative;
+    left: 55px;
+}
+
+.box1,
+.box2,
+.box3 {
+    margin: 12px;
+    padding: 12px;
+}
+
+.box1 {
+    height: 10rem;
+}
+
+.box2 {
+    flex-basis: 60%;
+    height: 18rem;
+}
+
+.language {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 12rem
+}
+
+.capsule {
+    width: fit-content;
+    border: 2px solid red;
+    padding: .3rem .9rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(15, 16, 18, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    cursor: pointer;
+}
+
+.capsule:hover {
+    border-color: #ff9564;
+}
+
+.capsule:focus,
+.capsule:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.box3 {
+    flex-basis: 39%;
+    height: 18rem;
+}
+
+
+.button {
+    margin: 2rem;
+    text-align: center;
+}
+
+.btn {
+    padding: .7rem 2.0rem;
+    margin: .4rem;
+    cursor: pointer;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(15, 16, 18, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: #D0D0D1;
+}

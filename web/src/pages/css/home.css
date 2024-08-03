@@ -1,0 +1,65 @@
+/* Home */
+.home {
+    position: relative;
+    left: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+}
+
+.home {
+    width: 96%;
+    height: 100vh;
+    border: 2px solid black;
+    background-color: #151618;
+}
+
+.content {
+    flex-basis: 35%;
+}
+
+.profile-image img {
+    height: 35rem;
+}
+
+/* from other Project  */
+.line {
+    font-size: 4.0rem;
+    color: rgba(229, 246, 255, 0.829);
+}
+
+.change_content:after {
+    content: "";
+    animation: changetext 12s infinite linear;
+    font-size: 3em;
+    font-weight: 600;
+    padding: 10px;
+    -webkit-animation: changetext 12s infinite linear;
+}
+
+@keyframes changetext {
+    0% {
+        content: "+DESIGNER";
+    }
+
+    20% {
+        content: "+CREATOR";
+    }
+
+    35% {
+        content: "+ENTHUSIAST";
+    }
+
+    60% {
+        content: "+FRELENCER";
+    }
+
+    80% {
+        content: "+CS SOPHOMORE  AT SZABIST'26";
+    }
+
+    100% {
+        content: "+STUDENT";
+    }
+}

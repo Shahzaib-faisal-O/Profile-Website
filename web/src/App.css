@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.5;
+}
+
+::-webkit-scrollbars {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #D0D0D1;
+}
+
+.home,
+.about,
+.contact,
+.education,
+.Skills {
+    max-width: 95.5%;
+    max-height: 100vh;
+    border: 2px solid black;
+    background-color: #151618;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.center {
+    text-align: center;
+}
+
+.border {
+    border-radius: 1.25rem;
+}
+
+.glass {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(15, 16, 18, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.muted {
+    color: #8A8B8C;
+}
+
+h1 {
+    font-size: 3.0rem;
+}
+
+h2 {
+    margin: 1rem 0;
+}
+
+.size,
+h2 {
+    font-size: 2.25rem;
+}
+
+.bigsize {
+    text-align: center;
+    font-size: 4.0rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.margin {
+    margin: 0rem 2.9rem;
+}
+
+/* d */
+:root {
+    --gray-base: #151618;
+    --gray-tint-10: #2c2d2f;
+    --gray-tint-20: #444546;
+    --gray-tint-40: #af6161;
+    --gray-tint-10: #2c2d2f;
+    --gray-tint-10: #2c2d2f;
+
+    --accent-base: #2FA2BD;
+    --accent-tint-90: #EAF6F8;
+
+    --contextual-success-base: #1FA47C;
+}
+
+
+
+/* Responsive Design for education  */
+@media (min-width: 768px) {
+    .edu_row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .education h1 {
+        font-size: 3.5rem;
+    }
+
+    .col_3 img {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mobile {
+        display: none;
+    }
+
+    .col_3 img {
+        width: 140px;
+    }
+
+    .edu_row {
+        gap: 5px;
+    }
+
+    .education {
+        height: 114vh;
+    }
+}
