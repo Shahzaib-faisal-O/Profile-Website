@@ -107,3 +107,7 @@ input:valid+label {
 .btn1:active {
     transform: translate3d(3px, 3px, 0);
 }
+
+.image-section img {
+    height: 600px;
+}

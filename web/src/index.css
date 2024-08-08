@@ -156,6 +156,15 @@ button:focus-visible {
     /* z-index: -1 */
   }
 
+  input,
+  textarea {
+    background-color: #f9f9f9;
+  }
+
+  .image-section img {
+    height: 00px;
+  }
+
   .well {
     padding: 1rem;
     height: 80vh;

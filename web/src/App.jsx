@@ -12,6 +12,7 @@ import Error from './pages/Error.jsx';
 import Nav from './components/Nav.jsx';
 import Footer from './components/Footer.jsx';
 import PreLoader from './components/PreLoader.jsx';
+import { toast } from 'react-toastify';
 
 
 
@@ -25,10 +26,16 @@ function App() {
 
     return () => clearTimeout(timer); // Clean up the timer on component unmount
   }, []);
-
+  const toastMessage = () => {
+    toast.info("Do You Know That I Am Single!");
+  }
   return (
     <>
+
       {show && <PreLoader />}
+      {
+        toastMessage()
+      }
       {!show && (
         <BrowserRouter>
           <Nav />

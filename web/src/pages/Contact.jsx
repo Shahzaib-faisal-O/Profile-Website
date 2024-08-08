@@ -2,7 +2,8 @@ import React from 'react'
 import './/css/contact.css'
 import { useState } from 'react'
 
-import contactImage from '../assets/image/contact-center.png'
+import contactImage from '../assets/contact-center.png'
+import { toast } from 'react-toastify'
 
 const Contact = () => {
     const [user, setUser] = useState({
@@ -34,6 +35,9 @@ const Contact = () => {
                 },
                 body: JSON.stringify(user),
             });
+            if (response.ok) {
+                toast.success("Registration Successful")
+            } else { toast.error("Registration UnSuccessful") }
             console.log(response);
         } catch (error) {
             console.log("contact", error);
@@ -58,7 +62,7 @@ const Contact = () => {
                     </div>
                     <div>
                         <textarea name="message" id="message" cols="40" rows="5" placeholder='' value={user.message} onChange={handleInput}></textarea>
-                        <label htmlFor="message">Message</label>
+                        <label htmlFor="message"></label>
                     </div>
                     <button className="btn1" type='submit'>
                         Connect
@@ -66,7 +70,8 @@ const Contact = () => {
                 </form>
             </div>
             <section className='image-section'>
-                <img src={contactImage} alt="" style={{ height: "600px" }} />
+                {/* <img src={contactImage} alt="" style={{ height: "600px" }} /> */}
+                <img src={contactImage} alt="" style={{ height: "" }} />
             </section>
         </div>
 
