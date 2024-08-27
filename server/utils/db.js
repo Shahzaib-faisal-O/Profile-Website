@@ -1,10 +1,12 @@
+require('dotenv').config();
+
 const mongoose = require('mongoose'); // Import the Mongoose library
 
 // Local database URI (commented out)
 // const URI = 'mongodb://127.0.0.1:27017/admin_panel';
 
 // Remote MongoDB Atlas URI
-const URI = 'mongodb+srv://shahzaib:shazi123faisal@cluster0.eqsiyc8.mongodb.net/ProfileWeb?retryWrites=true&w=majority&appName=Cluster0';
+const URI = ''; // Your Mongo db drive from your admin dataBase 
 
 // Function to establish a connection ta Base Namn to the database
 const ConnectionDB = async () => {
